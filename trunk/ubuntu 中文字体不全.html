@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="Stylesheet" type="text/css" href="style.css" />
+    <title>ubuntu 中文字体不全</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <div id="header">
+    	<ul id="top-nav">
+    		<li>
+    			<a href="blog.html">首页</a>
+    		</li>
+    	</ul>
+    </div>
+    <div class="contents">
+<p>
+﻿+ ubuntu 中文字体不全
+</p>
+
+<p>
+++1
+sudo aptitude install ttf-wqy-microhei
+</p>
+
+<p>
+有一定的作用,但是还是不全.
+</p>
+
+<p>
+++2 从windows 烤过来
+</p>
+
+
+<p>
+在Ubuntu下打开fonts目录下的truetype文件夹,
+然后新建一个文件夹
+命名为 windows（名字随便) 
+然后把字体复制进来
+</p>
+
+<p>
+再刷新字体缓存，命令如下，
+</p>
+
+<p>
+sudo mkfontscale
+sudo mkfontdir
+sudo fc-cache -fv 
+</p>
+	</div>
+	<div id="footer">
+	<p>&copy; 2010 bigzhu &nbsp;&nbsp; <a href="%root_path%SiteMap.html" title="站点地图">导航</a></p>
+	</div>
+</body>
+</html>
