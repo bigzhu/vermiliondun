@@ -14,6 +14,11 @@
     	</ul>
     </div>
     <div class="contents">
+<h2 id="toc_0.1">让 svn 自动设</h2>
+<pre>
+gvim /home/bigzhu/.subversion/config
+</pre>
+
 <p>
 conifg 中设 
 </p>
@@ -33,9 +38,10 @@ enable-auto-props = yes
 *.css = svn:mime-type=text/css
 Makefile = svn:eol-style=native
 </pre>
-<p>
+<h2 id="toc_0.2">手工设</h2>
+<pre>
 svn propset svn:mime-type text/html *.html
-</p>
+</pre>
 	</div>
 	<div id="footer">
 	<p>&copy; 2010 bigzhu &nbsp;&nbsp; <a href="%root_path%SiteMap.html" title="站点地图">导航</a></p>
