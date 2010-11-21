@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="Stylesheet" type="text/css" href="style.css" />
+    <title>svn反复要求输入用户名密码</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <div id="header">
+    	<ul id="top-nav">
+    		<li>
+    			<a href="blog.html">首页</a>
+    		</li>
+    	</ul>
+    </div>
+    <div class="contents">
+<p>
+﻿= svn反复要求输入用户名密码 =
+</p>
+
+<p>
+gvim ~/.subversion/config
+</p>
+
+<p>
+找到
+store-auth-creds = no
+</p>
+
+<p>
+改为
+store-auth-creds = yes
+</p>
+	</div>
+	<div id="footer">
+	<p>&copy; 2010 bigzhu &nbsp;&nbsp; <a href="%root_path%SiteMap.html" title="站点地图">导航</a></p>
+	</div>
+</body>
+</html>
