@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="Stylesheet" type="text/css" href="style.css" />
+    <title>flex 下取当前执行的函数</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <div id="header">
+    	<ul id="top-nav">
+    		<li>
+    			<a href="blog.html">首页</a>
+    		</li>
+    	</ul>
+    </div>
+    <div class="contents">
+<p>
+﻿=  flex 下取当前执行的函数 =
+</p>
+
+<p>
+咋个就这么难呢?
+可以定义这样一个函数:
+</p>
+<pre>
+		public function getUpperFun():String
+		{
+			var str:String=(new Error()).getStackTrace().split("at ")[[2]].split("[[")[[0]].split("/")[[1]];
+			str = str.replace("()", "");
+			return str;
+		}
+</pre>
+		
+<p>
+非常bt的用法吧.
+而且更bt的是,只能在 debug 的 flash 下用,正常的 flash下 (new Error()).getStackTrace()==null
+</p>
+
+<p>
+谁知道有更好的办法不?
+</p>
+	</div>
+	<div id="footer">
+	<p>&copy; 2010 bigzhu &nbsp;&nbsp; <a href="%root_path%SiteMap.html" title="站点地图">导航</a></p>
+	</div>
+</body>
+</html>
